@@ -9,12 +9,12 @@
   <script>
     var densidad = prompt("Qué densidad tiene el material elegido");
 
-    if (densidad >= 1) {
-      // Si densidad es mayor o igual a 1
+    if (!isNaN(densidad) && densidad < 1) {
+      alert("Flota en el agua");
+    } else if (!isNaN(densidad)) {
       alert("Se hunde en el agua");
     } else {
-      // Si es menor de 1 flotará en el agua
-      alert("Flota en el agua"); // Flotará en el agua
+      alert("La densidad introducida no es un numero");
     }
   </script>
   <body></body>
