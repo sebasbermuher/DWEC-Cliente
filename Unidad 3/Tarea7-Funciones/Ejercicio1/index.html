@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+    <script src="funciones.js"></script>
+  </head>
+  <body>
+    <!--Crea un archivo funciones.js en el que implementes las funciones  siguientes 
+        (busca la fórmula en Internet):
+        IMC (Índice de masa corporal)
+        FCM (Frecuencia cardíaca máxima)
+Crea un html donde incluyas el archivo anterior y dos enlaces. Cada uno  (mediante el método onClick) 
+ejecutará una función. Deberás tener 3 inputs donde introducir los datos necesarios para las funciones.
+-->
+
+    <label for="edad">EDAD</label>
+    <input type="number" id="edad" /><br /><br />
+
+    <label for="altura">ALTURA</label>
+    <input type="number" id="altura" /><br /><br />
+
+    <label for="peso">PESO</label>
+    <input type="number" id="peso" />
+    <br />
+    <br />
+
+    <input
+      type="button"
+      onclick="IMC()"
+      value="Calcular indice de masa corporal"
+    />
+    <input
+      type="button"
+      onclick="FCM()"
+      value="Calcular frecuencia cardíaca máxima"
+    />
+  </body>
+</html>
