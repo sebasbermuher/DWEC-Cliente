@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 3</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <form action="procesar.php" method="post">
+      <fieldset>
+        <label>Nombre del Disco:</label><br />
+        <input type="text" id="nombre" required /> <br />
+        <br />
+        <label>Cantante o grupo:</label><br />
+        <input type="text" id="cantante" required /> <br />
+        <br />
+        <label>Año de publicación:</label><br />
+        <input type="text" id="year" /> <br /><br />
+        <label>Género:</label>
+        <select id="genero">
+          <option value="rock">Rock</option>
+          <option value="pop">Pop</option>
+          <option value="punk">Punk</option>
+          <option value="indie">Indie</option>
+        </select>
+        <br /><br />
+        <label>Localización:</label><br />
+        <input type="text" id="localizacion" /> <br />
+        <br />
+        <label>Prestado:</label><br />
+        <input type="radio" name="prestado" value="prestado" /> Prestado
+        <input type="radio" name="prestado" value="no_prestado" checked /> No
+        Prestado
+        <br />
+        <br />
+        <input type="submit" id="enviar" value="Enviar" />
+        <input type="reset" value="Eliminar" />
+      </fieldset>
+    </form>
+  </body>
+</html>
