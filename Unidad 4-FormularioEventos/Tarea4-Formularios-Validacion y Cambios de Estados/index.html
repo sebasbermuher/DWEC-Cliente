@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 4</title>
+    <script src="script.js"></script>
+    <style>
+      .error {
+        border: solid 2px red;
+      }
+      .etiquetaError {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="procesar.php" method="post">
+      <fieldset>
+        <label for="name">Nombre del Disco:</label>
+        <input type="text" id="nombre" name="nombre" required /> <br />
+        <br />
+        <label for="name">Cantante o grupo:</label>
+        <input type="text" id="cantante" name="cantante" required /> <br />
+        <br />
+        <label for="name">Año de publicación:</label>
+        <input type="text" id="year" name="nombre" /> <br /><br />
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+          <option value="rock">Rock</option>
+          <option value="pop">Pop</option>
+          <option value="punk">Punk</option>
+          <option value="indie">Indie</option>
+        </select>
+        <br /><br />
+        <label for="name">Localización:</label>
+        <input type="text" id="localizacion" name="nombre" /> <br />
+        <br />
+        <label for="prestado">Prestado:</label><br />
+        <input type="radio" name="prestado" value="prestado" /> Prestado
+        <input type="radio" name="prestado" value="no_prestado" checked /> No
+        Prestado
+        <br />
+        <br />
+        <input type="submit" id="enviar" value="Enviar" />
+        <input type="reset" value="Eliminar" />
+      </fieldset>
+    </form>
+  </body>
+</html>
