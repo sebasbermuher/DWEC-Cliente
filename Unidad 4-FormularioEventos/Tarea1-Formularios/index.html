@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+    <!-- Prepara un formulario diseñado para almacenar los discos con losque
+trabajamos en el ejercicio del tema anterior (U3T8). Recuerda qué
+elementos se almacenaban, y elije el componente de formulario más
+adecuado:
+• Nombre del disco.
+• Grupo de música o cantante.
+• Año de publicación.
+• Tipo de música (podrá ser “rock”, “pop”, “punk” o“indie”);
+• Localización: almacenará un número de estantería.
+• Prestado: almacenará un valor booleano. Por defecto seráfalse.-->
+
+    <form>
+      <fieldset>
+        <legend>Datos de Disco</legend>
+        <table>
+          <tr>
+            <td>Nombre del Disco</td>
+            <td><input type="text" name="nombreDisco" /></td>
+          </tr>
+          <tr>
+            <td>Grupo/Cantante</td>
+            <td><input type="text" name="cantante" /></td>
+          </tr>
+          <tr>
+            <td>Año de publicacion</td>
+            <td><input type="number" name="year" /></td>
+          </tr>
+          <tr>
+            <td>Tipo de música</td>
+            <td>
+              <select name="comida">
+                <option>Rock</option>
+                <option>Pop</option>
+                <option>Punk</option>
+                <option>Indie</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Localización</td>
+            <td><input type="number" min="0" name="localizacion" /></td>
+          </tr>
+          <tr>
+            <td>Prestado</td>
+            <td>
+              <input name="prestado" type="radio" value="prestado" />Prestado
+              <input
+                name="prestado"
+                type="radio"
+                value="no_prestado"
+                checked
+              />No prestado
+            </td>
+          </tr>
+        </table>
+        <p>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Eliminar" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
