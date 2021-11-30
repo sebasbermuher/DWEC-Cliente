@@ -1,0 +1,11 @@
+.card{
+   width: 150px;
+   height: 150px;
+   background-color: red;
+}
+
+.acierto{
+    background-color:green;
+    width: 150px;
+    height: 150px;
+}
