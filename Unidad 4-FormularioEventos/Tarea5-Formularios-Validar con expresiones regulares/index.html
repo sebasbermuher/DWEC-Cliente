@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <form action="procesar.php" method="post">
+      <fieldset>
+        <label>Fecha de creacion:</label>
+        <input type="text" id="fechaCreacion" name="fechaCreacion" required />
+        <br />
+
+        <label
+          >Cocinero <span>(2 mayuculas, 1 simbolo y 4 digitos)</span></label
+        >
+        <input type="text" id="cocinero" name="cocinero" /><br />
+
+        <label
+          >Destinatario
+          <span
+            >(2 o 3 mayusculas correspondiente al estado, un guion bajo, el
+            nombre de la ciudad en minuscula, 2 puntos, 4 digitos)</span
+          ></label
+        >
+        <input type="text" id="destinatario" name="destinatario" /><br />
+
+        <label>Gramos <span>(numero del 100 al 5000)</span></label>
+        <input type="text" id="gramos" name="gramos" /><br />
+
+        <label
+          >Composición
+          <span
+            >(cantidad en gramos, 2 conjuntos de 1 o 2 letras seguidas o no de 1
+            numero)</span
+          ></label
+        >
+        <input type="text" id="composicion" name="composicion" /><br />
+
+        <label>Numero de cuenta de EE.UU. </label>
+        <input type="text" id="numCuenta" name="numCuenta" /><br />
+
+        <input type="submit" id="enviar" value="Enviar" />
+        <input type="reset" value="Eliminar" />
+      </fieldset>
+    </form>
+  </body>
+</html>
