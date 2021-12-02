@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen A 2020</title>
+    <script src="script.js"></script>
+  </head>
+  <style type="text/css">
+    label {
+      width: 150px;
+      float: left;
+      margin-bottom: 5px;
+    }
+    input,
+    select {
+      width: 150px;
+      float: left;
+      margin-bottom: 5px;
+    }
+
+    .error {
+      border: solid 2px red;
+    }
+
+    fieldset {
+      width: 350px;
+      border: thick solid #306;
+    }
+
+    #mensajes {
+      float: left;
+      background: #33ff33;
+      width: 325px;
+    }
+
+    #errores {
+      float: left;
+      background: #ff6633;
+      width: 325px;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <legend>Examen A U4 2020</legend>
+      <form
+        name="formulario"
+        id="formulario"
+        action="http://www.google.es"
+        method="get"
+      >
+        <label for="nombreModelo">Modelo:</label>
+        <input type="text" name="nombreModelo" id="nombreModelo" />
+        <label for="tipoModelo">Tipo de modelo:</label>
+        <select name="tipoModelo" id="tipoModelo">
+          <option value="0" selected="selected">Seleccione Modelo</option>
+          <option value="1">Televisor</option>
+          <option value="2">Frigorífico</option>
+          <option value="3">Lavadora</option>
+          <option value="4">Microondas</option>
+          <option value="5">Lavavajillas</option>
+        </select>
+        <label for="fecha">Fecha de fabricación:</label>
+        <input type="text" name="fecha" id="fecha" />
+        <label for="consumo">Consumo energético:</label>
+        <input type="text" name="consumo" id="consumo" />
+        <label for="referencia">Referencia:</label>
+        <input type="text" name="referencia" id="referencia" />
+        <label for="password">Password:</label>
+        <input type="text" name="password" id="password" />
+        <input type="reset" name="limpiar" id="button" value="Limpiar" />
+        <input type="submit" name="enviar" id="enviar" value="Enviar" />
+      </form>
+      <div id="errores"></div>
+      <div id="referencias"></div>
+    </fieldset>
+  </body>
+</html>
