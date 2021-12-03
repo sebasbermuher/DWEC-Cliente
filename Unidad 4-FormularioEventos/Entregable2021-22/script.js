@@ -2,7 +2,7 @@ window.onload = iniciar;
 
 function iniciar() {
   document.getElementById("enviar").addEventListener("click", validar, false);
-  //CORREGIDO 3/01/2021 Agregar elemento para el funcionamiento checkbox e input.
+  //CORREGIDO 3/11/2021 Agregar elemento para el funcionamiento checkbox e input.
   document
     .getElementById("contenido")
     .addEventListener("change", contenido, false);
