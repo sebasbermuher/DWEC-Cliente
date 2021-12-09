@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen Unidad 4</title>
+    <script defer src="script.js"></script>
+  </head>
+  <style type="text/css">
+    label{
+      width: 150px;
+      float:left;
+      margin-bottom:5px;	
+    }
+
+    input,select {
+      width:200px;
+      float:left;
+      margin-bottom:5px;
+    }
+    
+    fieldset{
+      width:350px;
+      border: thick solid #306;
+    }
+       
+    #errores{
+      float: left;
+      background:#FF6633;
+      width: 325px;
+    }
+      
+    .error{
+      border: solid 2px #FF0000;
+    }
+  
+    .correcto{
+      border: solid 2px green;
+    }  
+    </style>
+  <body>
+    <fieldset>
+      <legend>Examen Unidad 4 2021-22</legend>
+      <form
+        name="formulario"
+        id="formulario"
+        action="https://www.google.com/"
+        method="get"
+      >
+        <label for="titulo">Titulo de la grabacion:</label>
+        <input type="text" name="titulo" id="titulo" />
+        <label for="tipo">Tipo de grabacion:</label>
+        <select name="tipoGrabacion" id="tipoGrabacion">
+            <option value="Directo">Directo</option>
+            <option value="FalsoDirecto" selected>Falso Directo</option>
+            <option value="Cebo">Cebo</option>
+            <option value="Cola">Cola</option>
+        </select>
+        <label for="fecha">Fecha de grabacion:</label>
+        <input type="text" name="fecha" id="fecha" />
+        <label for="codigo">Codigo de grabacion:</label>
+        <input type="text" name="codigo" id="codigo" />
+        <label for="referencia">Referencia de la camara:</label>
+        <input type="text" name="referencia" id="referencia" />
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" name="contraseña" id="contraseña" />
+        <input name="fecha_publicacion" type="hidden" id="fecha_publicacion">        
+        <input type="reset" name="limpiar" id="button" value="Limpiar">
+        <input type="submit" name="enviar" id="enviar" value="Enviar">
+      <div id="errores"></div>
+    </fieldset>
+  </body>
+</html>
