@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entregable Unidad 5</title>
+    <script defer src="script.js"></script>
+  </head>
+  <style>
+      label{
+      width: 150px;
+      float:left;
+      margin-bottom:5px;	
+    }
+
+    input,select {
+      width:200px;
+      float:left;
+      margin-bottom:5px;
+    }
+    
+    fieldset{
+      width:350px;
+      border: thick solid #306;
+    }
+
+    button {
+      margin:1%;
+    }
+       
+    #errores{
+      float: left;
+      background:#FF6633;
+      width: 325px;
+    }
+      
+    .error{
+      border: solid 2px #FF0000;
+    }
+  
+    .correcto{
+      border: solid 2px green;
+    }
+  </style>
+  <body>
+    <head>
+      <h1 id="h1Cabecera">H1 DE CABECERA</h1>
+    </head>
+    <p id="parrafo">Lorem fistrum al ataquerl pupita ese hombree diodeno. Pecador me cago en tus muelas se calle ustée pecador te va a hasé pupitaa ahorarr diodenoo qué dise usteer condemor. Llevame al sircoo te voy a borrar el cerito a gramenawer diodeno mamaar papaar papaar me cago en tus muelas torpedo no te digo trigo por no llamarte Rodrigor a wan. Quietooor pecador ahorarr pupita tiene musho peligro de la pradera. No puedor por la gloria de mi madre jarl a peich diodeno.</p>
+    <fieldset>
+        <legend>Entregable Unidad 5</legend>
+        <form
+          name="formulario"
+          id="formulario"
+          action="https://www.google.com/"
+          method="get"
+        >
+          <label for="tipoColorFondo">Color de fondo:</label>
+          <select name="selectColorFondo" id="selectColorFondo">
+              <option value="#37EEDD">Azul claro</option>
+              <option value="white">Blanco</option>
+              <option value="grey">Gris</option>
+              <option value="#B9935A">Ocre</option>
+              <option value="#73EC65">Verde claro</option>
+              <option value="yellow">Amarillo</option>
+          </select>
+          <label for="tipoColorCabecera">Color de la cabecera:</label>
+          <select name="selectColorCabecera" id="selectColorCabecera">
+              <option value="blue">Azul</option>
+              <option value="grey">Gris</option>
+              <option value="#804000">Marron</option>
+              <option value="black">Negro</option>
+              <option value="red">Rojo</option>
+              <option value="green">Verde</option>
+              <option value="#7d2181">Purpura</option>
+          </select>
+          <label for="tipoLetra">Tipo de letra cabecera:</label>
+          <select name="selectLetra" id="selectLetra">
+              <option value="arial">Arial</option>
+              <option value="cursive">Comic Sans MS</option>
+              <option value="serif">Times New Roman</option>
+              <option value="sans-serif">Verdana</option>
+              <option value="monospace">Courier New</option>
+          </select>
+          <label for="alineacion">Alineacion cabecera:</label>
+          <select name="selectAlineacion" id="selectAlineacion">
+              <option value="left">Izquierda</option>
+              <option value="center">Centrada</option>
+              <option value="right">Derecha</option>
+          </select>
+          <label for="tamaño">Tamaño cabecera:</label>
+          <select name="selectTamaño" id="selectTamaño">
+              <option value="1.5em">Normal (1.5em)</option>
+              <option value="2em">Grande (2em)</option>
+              <option value="3em">Muy grande (3em)</option>
+          </select>
+          <label for="tipoColorParrafo">Color del parrafo:</label>
+          <select name="selectColorParrafo" id="selectColorParrafo">
+              <option value="blue">Azul</option>
+              <option value="grey">Gris</option>
+              <option value="#804000">Marron</option>
+              <option value="black">Negro</option>
+              <option value="red">Rojo</option>
+              <option value="green">Verde</option>
+              <option value="#7d2181">Purpura</option>
+          </select>
+          <label for="tipoLetraParrafo">Tipo de letra parrafo:</label>
+          <select name="selectLetraParrafo" id="selectLetraParrafo">
+              <option value="arial">Arial</option>
+              <option value="cursive">Comic Sans MS</option>
+              <option value="serif">Times New Roman</option>
+              <option value="sans-serif">Verdana</option>
+              <option value="monospace">Courier New</option>
+          </select>
+          <label for="alineacionParrafo">Alineacion parrafo:</label>
+          <select name="selectAlineacionParrafo" id="selectAlineacionParrafo">
+              <option value="left">Izquierda</option>
+              <option value="center">Centrada</option>
+              <option value="right">Derecha</option>
+              <option value="justify">Justificada</option>
+          </select>
+          <label for="tamañoParrafo">Tamaño parrafo:</label>
+          <select name="selectTamañoParrafo" id="selectTamañoParrafo">
+              <option value="0.8em">Pequeño (0.8em)</option>
+              <option value="1em">Normal (1em)</option>
+              <option value="1.2em">Grande (1.2em)</option>
+          </select>
+          <input type="button" name="aplicar" id="aplicar" value="Aplicar"/>
+          <input type="button" name="guardarCookie" id="guardarCookie" value="Guardar Cookie"/>
+          <input type="button" name="cargarCookie" id="cargarCookie" value="Cargar Cookie"/>
+          <input type="button" name="sesion" id="sesion" value="Sesion"/>
+          <input type="button" name="guardarPredeterminado" id="guardarPredeterminado" value="Guardar como predeterminado"/>
+          <input type="button" name="cargarPredeterminados" id="cargarPredeterminados" value="Cargar predeterminados"/>
+
+        <div id="errores"></div>
+      </fieldset>
+
+  </body>
+</html>
