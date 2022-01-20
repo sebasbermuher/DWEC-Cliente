@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entregable 2020-21</title>
+    <script defer src="script.js"></script>
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <form id="formulario">
+      <p>
+        <label>Nº columnas:</label><br />
+        <input type="text" id="columnasId" /><br />
+      </p>
+
+      <p>
+        <label>Nº Filas:</label><br />
+        <input type="text" id="filasId" /><br />
+      </p>
+
+      <p>
+        <input type="checkbox" id="headerId" />
+        <label> Introducir header.</label><br />
+      </p>
+
+      <p>
+        <label>Texto para cada celda:</label><br />
+        <input type="text" id="textoId" /><br />
+      </p>
+
+      <p>
+        <label>Grosor del borde:</label><br />
+        <input type="text" id="grosorBordeId" /><br />
+      </p>
+
+      <p>
+        <label>Elija un color:</label>
+        <select id="colorBordeId" name="colors">
+          <option value="blue">Azul</option>
+          <option selected value="black">Negro</option>
+          <option value="green">Verde</option>
+          <option value="yellow">Amarillo</option>
+        </select>
+      </p>
+
+      <p>
+        <input type="button" value="Generar tabla" onclick="crearTabla()" />
+      </p>
+    </form>
+    <hr />
+    <h3>Tabla generada:</h3>
+
+    <div id="tablaGeneradaId"></div>
+  </body>
+</html>
